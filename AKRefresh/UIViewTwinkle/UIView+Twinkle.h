@@ -15,7 +15,6 @@
 
 
 - (void)startTwinkle;
-- (void)startTwinkleInRect:(CGRect)rect;
 
 
 - (void)stopTwinkle;

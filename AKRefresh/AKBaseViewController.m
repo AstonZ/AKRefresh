@@ -44,6 +44,7 @@
     __weak typeof(self) wkSelf = self;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         wkSelf.dataSource = [AKRefreshHeaderView randomData];
+        [wkSelf.tableView reloadData];
         [wkSelf.tableView.refreshHeader endRefreshing];
     });
 }
