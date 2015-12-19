@@ -13,6 +13,24 @@
 		C62229C71C196BFB0037938A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62229C51C196BFB0037938A /* Main.storyboard */; };
 		C62229C91C196BFB0037938A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C62229C81C196BFB0037938A /* Assets.xcassets */; };
 		C62229CC1C196BFB0037938A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62229CA1C196BFB0037938A /* LaunchScreen.storyboard */; };
+		C6611ABA1C253919003B2494 /* AKPointScalAnimateView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6611AB91C253919003B2494 /* AKPointScalAnimateView.m */; };
+		C6611ABD1C253AD2003B2494 /* AKScalPointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6611ABC1C253AD2003B2494 /* AKScalPointViewController.m */; };
+		C68044541C239BEF00ECB622 /* AKRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C68044491C239BEF00ECB622 /* AKRefreshHeaderView.m */; };
+		C68044551C239BEF00ECB622 /* AKRotateRectAnimateView.m in Sources */ = {isa = PBXBuildFile; fileRef = C680444C1C239BEF00ECB622 /* AKRotateRectAnimateView.m */; };
+		C68044561C239BEF00ECB622 /* AKShimmerAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C680444E1C239BEF00ECB622 /* AKShimmerAnimationView.m */; };
+		C68044571C239BEF00ECB622 /* AKHeightLabelExtView.m in Sources */ = {isa = PBXBuildFile; fileRef = C68044511C239BEF00ECB622 /* AKHeightLabelExtView.m */; };
+		C68044581C239BEF00ECB622 /* UIScrollView+AKRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C68044531C239BEF00ECB622 /* UIScrollView+AKRefreshControl.m */; };
+		C680445B1C24E9AF00ECB622 /* AKRefreshExtImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C680445A1C24E9AF00ECB622 /* AKRefreshExtImageView.m */; };
+		C680445D1C24EA0400ECB622 /* test00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C680445C1C24EA0400ECB622 /* test00.jpg */; };
+		C68044601C250AFA00ECB622 /* AKShimmerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C680445F1C250AFA00ECB622 /* AKShimmerViewController.m */; };
+		C68044641C252FE500ECB622 /* AKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68044631C252FE500ECB622 /* AKBaseViewController.m */; };
+		C68044671C2531F000ECB622 /* AKRotationRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68044661C2531F000ECB622 /* AKRotationRectViewController.m */; };
+		C6B89ED21C2108A500C26C72 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B89ECF1C2108A500C26C72 /* FBShimmeringLayer.m */; };
+		C6B89ED31C2108A500C26C72 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B89ED11C2108A500C26C72 /* FBShimmeringView.m */; };
+		C6B89EDC1C2148EC00C26C72 /* TwinkleImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C6B89ED51C2148EC00C26C72 /* TwinkleImage.png */; };
+		C6B89EDD1C2148EC00C26C72 /* TwinkleLayer+Anim.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B89ED71C2148EC00C26C72 /* TwinkleLayer+Anim.m */; };
+		C6B89EDE1C2148EC00C26C72 /* TwinkleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B89ED91C2148EC00C26C72 /* TwinkleLayer.m */; };
+		C6B89EDF1C2148EC00C26C72 /* UIView+Twinkle.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B89EDB1C2148EC00C26C72 /* UIView+Twinkle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +44,44 @@
 		C62229C81C196BFB0037938A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C62229CB1C196BFB0037938A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C62229CD1C196BFB0037938A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6611AB81C253919003B2494 /* AKPointScalAnimateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKPointScalAnimateView.h; sourceTree = "<group>"; };
+		C6611AB91C253919003B2494 /* AKPointScalAnimateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKPointScalAnimateView.m; sourceTree = "<group>"; };
+		C6611ABB1C253AD2003B2494 /* AKScalPointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKScalPointViewController.h; sourceTree = "<group>"; };
+		C6611ABC1C253AD2003B2494 /* AKScalPointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKScalPointViewController.m; sourceTree = "<group>"; };
+		C68044461C239BEF00ECB622 /* AKRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKRefreshControl.h; sourceTree = "<group>"; };
+		C68044471C239BEF00ECB622 /* AKRefreshControlProtocoals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKRefreshControlProtocoals.h; sourceTree = "<group>"; };
+		C68044481C239BEF00ECB622 /* AKRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKRefreshHeaderView.h; sourceTree = "<group>"; };
+		C68044491C239BEF00ECB622 /* AKRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKRefreshHeaderView.m; sourceTree = "<group>"; };
+		C680444B1C239BEF00ECB622 /* AKRotateRectAnimateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKRotateRectAnimateView.h; sourceTree = "<group>"; };
+		C680444C1C239BEF00ECB622 /* AKRotateRectAnimateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKRotateRectAnimateView.m; sourceTree = "<group>"; };
+		C680444D1C239BEF00ECB622 /* AKShimmerAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKShimmerAnimationView.h; sourceTree = "<group>"; };
+		C680444E1C239BEF00ECB622 /* AKShimmerAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKShimmerAnimationView.m; sourceTree = "<group>"; };
+		C68044501C239BEF00ECB622 /* AKHeightLabelExtView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKHeightLabelExtView.h; sourceTree = "<group>"; };
+		C68044511C239BEF00ECB622 /* AKHeightLabelExtView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKHeightLabelExtView.m; sourceTree = "<group>"; };
+		C68044521C239BEF00ECB622 /* UIScrollView+AKRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+AKRefreshControl.h"; sourceTree = "<group>"; };
+		C68044531C239BEF00ECB622 /* UIScrollView+AKRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+AKRefreshControl.m"; sourceTree = "<group>"; };
+		C68044591C24E9AF00ECB622 /* AKRefreshExtImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKRefreshExtImageView.h; sourceTree = "<group>"; };
+		C680445A1C24E9AF00ECB622 /* AKRefreshExtImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKRefreshExtImageView.m; sourceTree = "<group>"; };
+		C680445C1C24EA0400ECB622 /* test00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test00.jpg; sourceTree = "<group>"; };
+		C680445E1C250AFA00ECB622 /* AKShimmerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKShimmerViewController.h; sourceTree = "<group>"; };
+		C680445F1C250AFA00ECB622 /* AKShimmerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKShimmerViewController.m; sourceTree = "<group>"; };
+		C68044621C252FE500ECB622 /* AKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKBaseViewController.h; sourceTree = "<group>"; };
+		C68044631C252FE500ECB622 /* AKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKBaseViewController.m; sourceTree = "<group>"; };
+		C68044651C2531F000ECB622 /* AKRotationRectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKRotationRectViewController.h; sourceTree = "<group>"; };
+		C68044661C2531F000ECB622 /* AKRotationRectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKRotationRectViewController.m; sourceTree = "<group>"; };
+		C6B89ECC1C2108A500C26C72 /* FBShimmering-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FBShimmering-Prefix.pch"; sourceTree = "<group>"; };
+		C6B89ECD1C2108A500C26C72 /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
+		C6B89ECE1C2108A500C26C72 /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringLayer.h; sourceTree = "<group>"; };
+		C6B89ECF1C2108A500C26C72 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
+		C6B89ED01C2108A500C26C72 /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
+		C6B89ED11C2108A500C26C72 /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
+		C6B89ED51C2148EC00C26C72 /* TwinkleImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwinkleImage.png; sourceTree = "<group>"; };
+		C6B89ED61C2148EC00C26C72 /* TwinkleLayer+Anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TwinkleLayer+Anim.h"; sourceTree = "<group>"; };
+		C6B89ED71C2148EC00C26C72 /* TwinkleLayer+Anim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TwinkleLayer+Anim.m"; sourceTree = "<group>"; };
+		C6B89ED81C2148EC00C26C72 /* TwinkleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwinkleLayer.h; sourceTree = "<group>"; };
+		C6B89ED91C2148EC00C26C72 /* TwinkleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwinkleLayer.m; sourceTree = "<group>"; };
+		C6B89EDA1C2148EC00C26C72 /* UIView+Twinkle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Twinkle.h"; sourceTree = "<group>"; };
+		C6B89EDB1C2148EC00C26C72 /* UIView+Twinkle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Twinkle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +114,15 @@
 		C62229BB1C196BFB0037938A /* AKRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				C62229C51C196BFB0037938A /* Main.storyboard */,
 				C62229BF1C196BFB0037938A /* AppDelegate.h */,
 				C62229C01C196BFB0037938A /* AppDelegate.m */,
 				C62229C21C196BFB0037938A /* ViewController.h */,
 				C62229C31C196BFB0037938A /* ViewController.m */,
-				C62229C51C196BFB0037938A /* Main.storyboard */,
+				C68044611C25254F00ECB622 /* Example VCs */,
+				C68044451C239BEF00ECB622 /* AKRefresh */,
+				C6B89ED41C2148EC00C26C72 /* UIViewTwinkle */,
+				C6B89ECB1C2108A500C26C72 /* FBShimmering */,
 				C62229C81C196BFB0037938A /* Assets.xcassets */,
 				C62229CA1C196BFB0037938A /* LaunchScreen.storyboard */,
 				C62229CD1C196BFB0037938A /* Info.plist */,
@@ -77,6 +137,88 @@
 				C62229BD1C196BFB0037938A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C68044451C239BEF00ECB622 /* AKRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				C68044461C239BEF00ECB622 /* AKRefreshControl.h */,
+				C68044471C239BEF00ECB622 /* AKRefreshControlProtocoals.h */,
+				C68044481C239BEF00ECB622 /* AKRefreshHeaderView.h */,
+				C68044491C239BEF00ECB622 /* AKRefreshHeaderView.m */,
+				C680444A1C239BEF00ECB622 /* AnimateHeaderViews */,
+				C680444F1C239BEF00ECB622 /* HeadExtViews */,
+				C68044521C239BEF00ECB622 /* UIScrollView+AKRefreshControl.h */,
+				C68044531C239BEF00ECB622 /* UIScrollView+AKRefreshControl.m */,
+			);
+			path = AKRefresh;
+			sourceTree = "<group>";
+		};
+		C680444A1C239BEF00ECB622 /* AnimateHeaderViews */ = {
+			isa = PBXGroup;
+			children = (
+				C680444B1C239BEF00ECB622 /* AKRotateRectAnimateView.h */,
+				C680444C1C239BEF00ECB622 /* AKRotateRectAnimateView.m */,
+				C680444D1C239BEF00ECB622 /* AKShimmerAnimationView.h */,
+				C680444E1C239BEF00ECB622 /* AKShimmerAnimationView.m */,
+				C6611AB81C253919003B2494 /* AKPointScalAnimateView.h */,
+				C6611AB91C253919003B2494 /* AKPointScalAnimateView.m */,
+			);
+			path = AnimateHeaderViews;
+			sourceTree = "<group>";
+		};
+		C680444F1C239BEF00ECB622 /* HeadExtViews */ = {
+			isa = PBXGroup;
+			children = (
+				C68044501C239BEF00ECB622 /* AKHeightLabelExtView.h */,
+				C68044511C239BEF00ECB622 /* AKHeightLabelExtView.m */,
+				C68044591C24E9AF00ECB622 /* AKRefreshExtImageView.h */,
+				C680445A1C24E9AF00ECB622 /* AKRefreshExtImageView.m */,
+				C680445C1C24EA0400ECB622 /* test00.jpg */,
+			);
+			path = HeadExtViews;
+			sourceTree = "<group>";
+		};
+		C68044611C25254F00ECB622 /* Example VCs */ = {
+			isa = PBXGroup;
+			children = (
+				C68044621C252FE500ECB622 /* AKBaseViewController.h */,
+				C68044631C252FE500ECB622 /* AKBaseViewController.m */,
+				C680445E1C250AFA00ECB622 /* AKShimmerViewController.h */,
+				C680445F1C250AFA00ECB622 /* AKShimmerViewController.m */,
+				C68044651C2531F000ECB622 /* AKRotationRectViewController.h */,
+				C68044661C2531F000ECB622 /* AKRotationRectViewController.m */,
+				C6611ABB1C253AD2003B2494 /* AKScalPointViewController.h */,
+				C6611ABC1C253AD2003B2494 /* AKScalPointViewController.m */,
+			);
+			name = "Example VCs";
+			sourceTree = "<group>";
+		};
+		C6B89ECB1C2108A500C26C72 /* FBShimmering */ = {
+			isa = PBXGroup;
+			children = (
+				C6B89ECC1C2108A500C26C72 /* FBShimmering-Prefix.pch */,
+				C6B89ECD1C2108A500C26C72 /* FBShimmering.h */,
+				C6B89ECE1C2108A500C26C72 /* FBShimmeringLayer.h */,
+				C6B89ECF1C2108A500C26C72 /* FBShimmeringLayer.m */,
+				C6B89ED01C2108A500C26C72 /* FBShimmeringView.h */,
+				C6B89ED11C2108A500C26C72 /* FBShimmeringView.m */,
+			);
+			path = FBShimmering;
+			sourceTree = "<group>";
+		};
+		C6B89ED41C2148EC00C26C72 /* UIViewTwinkle */ = {
+			isa = PBXGroup;
+			children = (
+				C6B89ED51C2148EC00C26C72 /* TwinkleImage.png */,
+				C6B89ED61C2148EC00C26C72 /* TwinkleLayer+Anim.h */,
+				C6B89ED71C2148EC00C26C72 /* TwinkleLayer+Anim.m */,
+				C6B89ED81C2148EC00C26C72 /* TwinkleLayer.h */,
+				C6B89ED91C2148EC00C26C72 /* TwinkleLayer.m */,
+				C6B89EDA1C2148EC00C26C72 /* UIView+Twinkle.h */,
+				C6B89EDB1C2148EC00C26C72 /* UIView+Twinkle.m */,
+			);
+			path = UIViewTwinkle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +278,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B89EDC1C2148EC00C26C72 /* TwinkleImage.png in Resources */,
 				C62229CC1C196BFB0037938A /* LaunchScreen.storyboard in Resources */,
 				C62229C91C196BFB0037938A /* Assets.xcassets in Resources */,
+				C680445D1C24EA0400ECB622 /* test00.jpg in Resources */,
 				C62229C71C196BFB0037938A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,8 +294,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				C62229C41C196BFB0037938A /* ViewController.m in Sources */,
+				C68044671C2531F000ECB622 /* AKRotationRectViewController.m in Sources */,
+				C68044571C239BEF00ECB622 /* AKHeightLabelExtView.m in Sources */,
+				C6B89EDE1C2148EC00C26C72 /* TwinkleLayer.m in Sources */,
+				C68044581C239BEF00ECB622 /* UIScrollView+AKRefreshControl.m in Sources */,
+				C680445B1C24E9AF00ECB622 /* AKRefreshExtImageView.m in Sources */,
+				C6B89EDF1C2148EC00C26C72 /* UIView+Twinkle.m in Sources */,
+				C68044561C239BEF00ECB622 /* AKShimmerAnimationView.m in Sources */,
+				C68044641C252FE500ECB622 /* AKBaseViewController.m in Sources */,
 				C62229C11C196BFB0037938A /* AppDelegate.m in Sources */,
+				C68044541C239BEF00ECB622 /* AKRefreshHeaderView.m in Sources */,
+				C68044601C250AFA00ECB622 /* AKShimmerViewController.m in Sources */,
+				C6B89EDD1C2148EC00C26C72 /* TwinkleLayer+Anim.m in Sources */,
 				C62229BE1C196BFB0037938A /* main.m in Sources */,
+				C6611ABA1C253919003B2494 /* AKPointScalAnimateView.m in Sources */,
+				C6B89ED21C2108A500C26C72 /* FBShimmeringLayer.m in Sources */,
+				C6B89ED31C2108A500C26C72 /* FBShimmeringView.m in Sources */,
+				C68044551C239BEF00ECB622 /* AKRotateRectAnimateView.m in Sources */,
+				C6611ABD1C253AD2003B2494 /* AKScalPointViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +460,7 @@
 				C62229D21C196BFB0037938A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
