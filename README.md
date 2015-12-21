@@ -11,7 +11,7 @@
 
  效果如下: 
  
-  ![Alt Text](https://github.com/AstonZ/AKRefresh/blob/master/AKRefreshDemo.gif)
+  ![image](https://github.com/AstonZ/AKRefresh/blob/master/Resources/AKRefreshDemo.gif)
   
   
   
