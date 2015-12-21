@@ -7,7 +7,7 @@
 #### 支持用户使劲儿下拉的时候，刷新组件之上的扩展View，也是高度自定义
 
 用法:
-- 1. 新建一个UIView子类，遵循<AKRefreshAnimateHeaderViewProtocol>,
+- 1. 新建一个UIView子类，遵循协议AKRefreshAnimateHeaderViewProtocol
 - 2. 实现StartAnimation，StopAnimation两个方法
 - 3. 一句话调用，详情见Demo
 
