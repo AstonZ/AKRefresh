@@ -38,25 +38,41 @@ CGFloat kAKRefreshControlHead_ExtentionViewHeight = 600.f;
 }
 
 
-- (instancetype)initWithScrollView:(UIScrollView *)scrollView
++ (instancetype)refreshHeaderOnlyAnimateViewWithScrollView:(UIScrollView *)scrollView refreshAction:(RefreshAction)refreshAction
+{
+    if (kRefreshHeader_AnimateViewClassName == nil) {
+        return nil;
+    }
+    return [self refreshHeaderWithScrollView:scrollView registerAnimatedHeaderViewClass:NSClassFromString (kRefreshHeader_AnimateViewClassName) extentionView:nil refreshAction:refreshAction];
+}
+
++ (instancetype)refreshHeaderWithScrollView:(UIScrollView *)scrollView refreshAction:(RefreshAction)refreshAction
+{
+    
+    if (kRefreshHeader_AnimateViewClassName == nil) {
+        return nil;
+    }
+    return [self refreshHeaderWithScrollView:scrollView registerAnimatedHeaderViewClass:NSClassFromString (kRefreshHeader_AnimateViewClassName) extentionView:NSClassFromString(kRefreshHeader_ExtentionViewClassName) refreshAction:refreshAction];
+}
+
+
++ (instancetype)refreshHeaderWithScrollView:(UIScrollView *)scrollView
    registerAnimatedHeaderViewClass:(Class <AKRefreshAnimateHeaderViewProtocol>)animatedViewClass
                      refreshAction:(RefreshAction)refreshAction
 {
-    return [self initWithScrollView:scrollView registerAnimatedHeaderViewClass:animatedViewClass extentionView:nil refreshAction:refreshAction];
+    return [self refreshHeaderWithScrollView:scrollView registerAnimatedHeaderViewClass:animatedViewClass extentionView:nil refreshAction:refreshAction];
 }
 
-/** 传入实现代理的class即可 **/
-- (instancetype)initWithScrollView:(UIScrollView *)scrollView
++ (instancetype)refreshHeaderWithScrollView:(UIScrollView *)scrollView
    registerAnimatedHeaderViewClass:(Class <AKRefreshAnimateHeaderViewProtocol>)animatedViewClass
                      extentionView:(Class <AKRefreshExtentionHeaderViewProtocol>)extentionViewClass
                      refreshAction:(RefreshAction)refreshAction
 {
-    if ((self = [self init]) == nil) {
-        return self;
-    }
-  
-    self.scrollView = scrollView;
-    if (self.scrollView == nil) {
+    
+    AKRefreshHeaderView *headerView = [[AKRefreshHeaderView alloc] init];
+    
+    headerView.scrollView = scrollView;
+    if (headerView.scrollView == nil) {
         NSLog(@"AKRefresh Warning !! There is No ScrollView !");
         return nil;
     }
@@ -91,9 +107,9 @@ CGFloat kAKRefreshControlHead_ExtentionViewHeight = 600.f;
     //If there is a custom height for views, otherwise, use default values
     
     if (isAniResponseToHeight) {
-        _heightForAnimateView = [animatedViewClass heightForAnimatingView];
+        headerView.heightForAnimateView = [animatedViewClass heightForAnimatingView];
     }else{
-        _heightForAnimateView = kAKRefreshControlHead_AnimateViewHeight;
+        headerView.heightForAnimateView = kAKRefreshControlHead_AnimateViewHeight;
     }
     
     CGRect extFrame  = CGRectMake(0, 0, CGRectGetWidth(scrollView.bounds), 0);
@@ -109,42 +125,39 @@ CGFloat kAKRefreshControlHead_ExtentionViewHeight = 600.f;
         IMP extHeightIMP = method_getImplementation(extHeightMethod);
         isExtResponseToHeight = extHeightIMP != NULL;
         if (isExtResponseToHeight) {
-            _heightForExtentionView = [extentionViewClass heightForExtentionView];
+            headerView.heightForExtentionView = [extentionViewClass heightForExtentionView];
         }else {
-            _heightForExtentionView = kAKRefreshControlHead_ExtentionViewHeight;
+            headerView.heightForExtentionView = kAKRefreshControlHead_ExtentionViewHeight;
         }
         //Frames for each views
-        extFrame.size.height = _heightForExtentionView;
-        self.extentionView = [[extentionViewClass alloc] initWithFrame:extFrame];
-        [self addSubview:self.extentionView];
+        extFrame.size.height = headerView.heightForExtentionView;
+        headerView.extentionView = [[extentionViewClass alloc] initWithFrame:extFrame];
+        [headerView addSubview:headerView.extentionView];
 
     }else{
-        _heightForExtentionView = 0.0f;
+        headerView.heightForExtentionView = 0.0f;
     }
   
     CGRect aniFrame = extFrame;
-    aniFrame.origin .y = _heightForExtentionView;
-    aniFrame.size.height = _heightForAnimateView;
+    aniFrame.origin .y = headerView.heightForExtentionView;
+    aniFrame.size.height = headerView.heightForAnimateView;
     
     CGRect viewFrame = extFrame;
-    viewFrame.size.height += _heightForAnimateView;
-    viewFrame.origin.y = -_heightForAnimateView - _heightForExtentionView;
+    viewFrame.size.height += headerView.heightForAnimateView;
+    viewFrame.origin.y = -headerView.heightForAnimateView - headerView.heightForExtentionView;
     
-    self.frame = viewFrame;
+    headerView.frame = viewFrame;
     
     
-    self.animateView = [[animatedViewClass alloc] initWithFrame:aniFrame];
+    headerView.animateView = [[animatedViewClass alloc] initWithFrame:aniFrame];
 
-    [self addSubview:self.animateView];
+    [headerView addSubview:headerView.animateView];
     
-    _blockRefresh = [refreshAction copy];
+    headerView.blockRefresh = [refreshAction copy];
     
-    [scrollView addSubview:self];
-    [scrollView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
-
-    
-    return self;
-    
+    [scrollView addSubview:headerView];
+    [scrollView addObserver:headerView forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+    return headerView;
     
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C608692C1C27934900D45513 /* AKStaticHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C608692B1C27934900D45513 /* AKStaticHeaderViewController.m */; };
 		C62229BE1C196BFB0037938A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C62229BD1C196BFB0037938A /* main.m */; };
 		C62229C11C196BFB0037938A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C62229C01C196BFB0037938A /* AppDelegate.m */; };
 		C62229C41C196BFB0037938A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62229C31C196BFB0037938A /* ViewController.m */; };
@@ -34,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C608692A1C27934900D45513 /* AKStaticHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKStaticHeaderViewController.h; sourceTree = "<group>"; };
+		C608692B1C27934900D45513 /* AKStaticHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKStaticHeaderViewController.m; sourceTree = "<group>"; };
 		C62229B91C196BFB0037938A /* AKRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C62229BD1C196BFB0037938A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C62229BF1C196BFB0037938A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -190,6 +193,8 @@
 				C68044661C2531F000ECB622 /* AKRotationRectViewController.m */,
 				C6611ABB1C253AD2003B2494 /* AKScalPointViewController.h */,
 				C6611ABC1C253AD2003B2494 /* AKScalPointViewController.m */,
+				C608692A1C27934900D45513 /* AKStaticHeaderViewController.h */,
+				C608692B1C27934900D45513 /* AKStaticHeaderViewController.m */,
 			);
 			name = "Example VCs";
 			sourceTree = "<group>";
@@ -294,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C62229C41C196BFB0037938A /* ViewController.m in Sources */,
+				C608692C1C27934900D45513 /* AKStaticHeaderViewController.m in Sources */,
 				C68044671C2531F000ECB622 /* AKRotationRectViewController.m in Sources */,
 				C68044571C239BEF00ECB622 /* AKHeightLabelExtView.m in Sources */,
 				C6B89EDE1C2148EC00C26C72 /* TwinkleLayer.m in Sources */,

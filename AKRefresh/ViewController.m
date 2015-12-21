@@ -21,19 +21,16 @@
 - (NSDictionary *)dataSource
 {
     if (_dataSource == nil) {
+        
+        NSArray *VCs = @[
+                         @"AKShimmerViewController",
+                         @"AKRotationRectViewController",
+                         @"AKScalPointViewController",
+                         @"AKStaticHeaderViewController"
+                         ];
         _dataSource = @{
-                        
-                        @"With Extention View":@[
-                          @"AKShimmerViewController",
-                          @"AKRotationRectViewController",
-                          @"AKScalPointViewController"
-                            ],
-                        
-                        @"Without Extention View":@[
-                                @"AKShimmerViewController",
-                                @"AKRotationRectViewController",
-                                @"AKScalPointViewController"
-                                ]
+                        @"Without Extention View":VCs,
+                        @"With Extention View":VCs
                         };
     }
     return _dataSource;

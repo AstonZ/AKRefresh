@@ -15,9 +15,14 @@
     [super viewDidLoad];
     
     __weak typeof(self) wkSelf = self;
-    self.tableView.refreshHeader = [[AKRefreshHeaderView alloc] initWithScrollView:self.tableView registerAnimatedHeaderViewClass:NSClassFromString(@"AKShimmerAnimationView") extentionView: self.hasExtView? NSClassFromString(@"AKRefreshExtImageView"):nil refreshAction:^(AKRefreshHeaderView *headerView) {
+    self.tableView.refreshHeader = [AKRefreshHeaderView
+                                    refreshHeaderWithScrollView:self.tableView
+                                    registerAnimatedHeaderViewClass:NSClassFromString(@"AKShimmerAnimationView")
+                                    extentionView: self.hasExtView? NSClassFromString(@"AKRefreshExtImageView"):nil
+                                    refreshAction:^(AKRefreshHeaderView *headerView) {
             [wkSelf actionRefresh];
         }];
+
 
     
 
